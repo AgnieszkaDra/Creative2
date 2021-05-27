@@ -2,17 +2,13 @@ body{
     font-size: 1em;
 
 }
-h1{
-    position: relative;
-    
-}
+
 .logo{
     width:calc(3rem + 1vw);
     height:calc(3rem + 1vh);
     font-size: calc(0.5rem + 0.5vw);
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     background-color:blue;
-    
     display: flex;
     justify-content: center;
     align-items: center;
