@@ -1,6 +1,26 @@
+:root{
+    box-sizing: border-box;
+    --darkblue:var(#00008b);
+    --lightblue:var(#8b8bff);
+}
+
+*,
+::before,
+::after{
+    box-sizing: inherit;
+}
+
+
 body{
     font-size: 1em;
+    background-color: #eee;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 22em;
 
+}
+
+body * + * {
+    margin-top: 1.5em;
 }
 
 .logo{
@@ -22,18 +42,67 @@ header{
 }
 
 .one{
-    width:60%;
-    height:40vh;
+    
+    width: calc(65% + 1vw);
+    height: 40vh;
+    clip-path: polygon(0 0, 51% 0, 100% 100%, 0% 100%);
+    background-color: blue;
+    z-index: 100;
+    margin-right: -10vw; 
+    margin-top: 0.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
+main{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+}
 
+.two{
+    width:100%;
+    /* background-color: blueviolet; */
+   margin: 0;
+   z-index: 10;
+}
+
+@media(max-width:800px){
+    .two{
+        visibility: hidden;
+    }
+}
+
+.women{
+    width: 100%;
+}
 
 .women__photo{
-    width: calc(40% + 2vw);
+    width: calc(100% + 1vw);
     height: 40vh;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    float: right;
+    clip-path: polygon(77% 0, 100% 23%, 100% 77%, 77% 100%, 33% 100%, 0 50%, 33% 0);
 }
 
+header, main{
+    background-color: #fff;
+}
+
+.container{
+    max-width: 1080px;
+    margin:  0 auto;
+}
+
+.p{
+    font-size: 0.5em;
+}
+
+h3{
+   flex-wrap: wrap;
+}
 
 
