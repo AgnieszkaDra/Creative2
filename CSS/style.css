@@ -97,12 +97,73 @@ header, main{
     margin:  0 auto;
 }
 
-.p{
+p{
     font-size: 0.5em;
 }
 
 h3{
    flex-wrap: wrap;
 }
+.info{
+    width: 50%;
+    float: left;
+}
+.media{
+    float: left;
+    
+    padding: 1.5em;
+    background-color: #eee;
+    border-radius: 0.5em;
+    margin: 0 1.5e 1.5em 0;
+    width: calc(100% - 1.5em);
+   
 
+}
+
+/* .media:nth-child(even){
+    clear: left;
+} */
+
+.media-image{
+    float: left;
+    margin-right: 1.5em;
+}
+
+.media-body{
+    overflow: auto;
+    margin-top: 0;
+}
+
+.media-body h4{
+    margin-top: 0;
+}
+
+.advantage{
+    width: 50%;
+    margin: 0;
+    
+    
+}
+
+.aside{
+
+    padding: 0 1.5em;
+
+    
+    
+}
+
+.left{
+    float: left;
+}
+
+ .clearfix::before,
+ .clearfix::after{
+     display: table;
+     content: '';
+ }
+
+ .clearfix::after{
+     clear: both;
+ }
 
